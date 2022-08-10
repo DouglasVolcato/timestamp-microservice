@@ -26,6 +26,15 @@ app.get("/api", (req, res) => {
   res.json({ unix: Number(newDate), utc: newDate.toUTCString() });
 });
 
+//Show webpage
+// app.get('/', function (req, res) {
+//   res.sendFile(__dirname + '/views/index.html');
+// });
+//Request Header Parser Microservice
+// app.get('/api/whoami', function (req, res) {
+//   res.json({ ipaddress : req.header('x-forwarded-for'), language : req.header('accept-language') , software : req.header('user-agent')});
+// });
+
 app.listen(3000, () => {
   console.log("App running at port 3000");
   console.log("Access at http://localhost:3000/");
